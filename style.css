@@ -3,13 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-.diceContainer{
-    text-align: center;
-    width: 100%;
-}
 
 .rollButton {
     display: block;
     width: 80px;
-    margin:auto;
+    margin:2em auto 0;
+  }
+
+  .diceContainer {
+    text-align: center;
+    animation: zoom-in-zoom-out 1s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
   }
